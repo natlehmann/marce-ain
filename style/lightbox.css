@@ -1,0 +1,122 @@
+#lightbox{
+	background-color:#eee;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ float: left; }
+#keyboardMsg{ float: right; }
+#closeButton{ top: 5px; right: 5px; }
+
+#lightbox img{ border: none; clear: both;} 
+#overlay img{ border: none; }
+
+#overlay{ background-image: url(overlay.png); }
+
+* html #overlay{
+	background-color: #333;
+	back\ground-color: transparent;
+	background-image: url(blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="overlay.png", sizingMethod="scale");
+	}
+	
+	
+/*trbajos galeria*/
+
+.fadebox {
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.7);
+        z-index:1001;
+        -moz-opacity: 0.7;
+        opacity:.70;
+        filter: alpha(opacity=70);
+    }
+	
+.overbox {
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1002;
+    }
+	
+.content {
+	background: rgba(0,0,0,0.7);
+	height: 900px;
+}  
+
+.content div {
+	float:left;
+}  
+
+#contentGaleria {
+    margin-left: 22%;
+    margin-top: 10%;
+}  
+
+#contentBorde {
+	border: 9px white solid;
+}  
+
+.contentFlechas {
+    margin-top: 30%;
+}  
+
+.botonesGaleria {
+	float:left;		    
+}  
+
+
+.botonesCierre {
+	float: right; 
+}  
+
+.botonesCierre a:link {
+   color: #FFFFFF;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}  
+
+.botonesCierre a:visited {
+   color: #FFFFFF;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}  
+
+.botonesCierre a:active {
+   color: #FFFFFF;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}  
+
+.botonesCierre a:hover {
+   color: #dc261d;
+    float: right;
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}  
+
+
+

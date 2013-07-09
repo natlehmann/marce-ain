@@ -1,0 +1,155 @@
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /> 
+	<link rel="stylesheet" href="style/lightbox.css">
+	<link rel="stylesheet" type="text/css" media="Screen" href="style/master.css">
+	<link media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
+		href="style/master_mobile.css" type="text/css" rel="stylesheet" /> 
+		
+	<!--[if IEMobile]>
+	<link rel="stylesheet" type="text/css" href="style/master_mobile.css" media="screen" />
+	<![endif]-->
+	
+	<title>ainoko</title>
+	
+	<script type="text/javascript">
+		function MM_preloadImages() { //v3.0
+		  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+		    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+		    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+		}
+		function MM_swapImgRestore() { //v3.0
+		  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+		}
+		function MM_findObj(n, d) { //v4.01
+		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+		    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+		  if(!x && d.getElementById) x=d.getElementById(n); return x;
+		}
+		
+		function MM_swapImage() { //v3.0
+		  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+		   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+		}
+	</script>
+	<script type="text/JavaScript" src="js/jquery-1.9.1.min.js"></script>
+	
+	<script type="text/javascript">
+		function cargarPagina(url) {
+			$.ajax({
+				url: url,
+				dataType: "html"
+			}).done(function( data ) {
+				$("#recuadroTexto").html(data);
+				if (screen && (screen.width <= 480 || window.innerWidth <= 480)) {
+					$('#recuadroTexto .titulo').css('top', '5px');
+					$('.cerrar').css('top', '5px');
+					$('#header-logo-menu').hide();
+					$('.main-content').show();
+				}
+			});
+		}
+		$(function() {
+		});
+	</script>
+     <script type="text/javascript">
+function showLightbox() {
+	document.getElementById('over').style.display='block';
+	document.getElementById('fade').style.display='block';
+}
+function hideLightbox() {
+	document.getElementById('over').style.display='none';
+	document.getElementById('fade').style.display='none';
+}
+</script>
+
+
+</head>
+
+<body onLoad="MM_preloadImages('images/menu_equipo_on.png','images/menu_servicios_on.png','images/menu_contacto_on.png','images/idioma_en.png','images/botGaleriaRetro_on.png','images/botGaleriaAvan_on.png')">
+	
+<div class="idioma">
+	<a href="index_en.html" target="_self"
+		onMouseOver="MM_swapImage('idioma','','images/idioma_en.png',1)"
+		onMouseOut="MM_swapImgRestore()">
+		<img src="images/idioma_en.png" name="idioma" border="0" id="idioma" />
+	</a>
+</div>
+
+<div class="cerrar">
+	<a href="index.html">
+		X
+	</a>
+</div>
+
+<div class="contenedor" id="header-logo-menu">
+	<div class="contenidoTop">
+		<img src="images/logo.png" width="155" height="106" border="0" />
+  </div>
+	
+	<div class="contenidoMenu">
+		<div onClick="cargarPagina('nosotros_en.html')" style="cursor: pointer">NOSOTROS</div>
+							
+		<div onClick="cargarPagina('hacemos_en.html')" style="cursor: pointer">
+			HACEMOS
+    </div>
+							
+		<div onClick="cargarPagina('trabajos_en.html')" style="cursor: pointer">
+			TRABAJOS
+    </div>
+							
+		<div onClick="cargarPagina('contacto_en.html')" style="cursor: pointer">
+			CONTACTO
+    </div>
+		
+		<div class="flag">
+			<a href="home.html" target="_self" onMouseOver="MM_swapImage('idioma','','images/idioma_en.png',1)"
+				onMouseOut="MM_swapImgRestore()">
+				<img src="images/es.png" name="idioma" border="0" id="idioma" />
+			</a> <a href="home_en.html" target="_self" onMouseOver="MM_swapImage('idioma','','images/idioma_en.png',1)"
+				onMouseOut="MM_swapImgRestore()">
+				<img src="images/en.png" name="idioma" border="0" id="idioma" />
+			</a>
+		</div>			
+	</div>
+</div>
+
+<div class="contenedor">
+
+	<div id="recuadroTexto">
+		<div class="main-banner"><img src="images/bulletTitular.png" /> NOSOTROS
+			<img src="images/imgNosotros.jpg" />
+	  </div>
+		
+		<div class="main-content">
+			<div class="texto-principal">
+				Nuestra <strong>formación y experiencia en el diseño industrial</strong> nos permite pensar la realización de una obra con un enfoque proyectual y técnico que facilita la materialización para el artista. <br><br>
+
+Tenemos una <strong>experiencia de más de 10 años en el área y una gran confianza en la calidad de nuestros trabajos</strong> y en la satisfacción de nuestros clientes.<br><br> 
+
+Nuestro taller está ubicado en el barrio de Palermo en un espacio que nos permite trabajar en grandes escalas.
+			</div>
+
+		</div>
+	</div>
+
+</div>
+	<div id="over" class="overbox">
+            <div class="botonesCierre"><a href="javascript:hideLightbox();" >X</a></div>
+            <div class="content">
+                <div id="contentGaleria">
+                    <div class="contentFlechas"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('retro','','images/botGaleriaRetro_on.png',1)"><img src="images/botGaleriaRetro_off.png" name="retro" width="29" height="71" border="0"></a></div>
+                    <div id="contentBorde"><img src="images/Trabajo01.jpg" width="798" height="575" /></div>
+                    <div class="contentFlechas"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('avan','','images/botGaleriaAvan_on.png',1)"><img src="images/botGaleriaAvan_off.png" name="avan" width="29" height="71" border="0"></a></div>
+                 </div>
+            </div>
+            
+            
+    </div>
+<script src="slideShow.js"></script>
+</body>
+</html>

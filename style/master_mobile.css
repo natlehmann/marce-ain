@@ -1,0 +1,353 @@
+/*--------------------------------------tipografias--------------------------------------*/
+@charset "utf-8";
+
+@CHARSET "ISO-8859-1";
+
+/*font especial*/
+@font-face {
+    font-family: 'GothamRnd-Bold'; /*nombre*/
+    src: url('../fonts/GothamRnd-Bold.eot');
+    src: url('../fonts/GothamRnd-Bold.eot?#iefix') format('embedded-opentype'), /*para qeu funcione el ie*/
+         url('../fonts/GothamRnd-Bold.woff') format('woff'),
+         url('../fonts/GothamRnd-Bold.ttf') format('truetype'),
+         url('../fonts/GothamRnd-Bold.svg#GothamRnd-Bold') format('svg');
+	 src: url('../fonts/GothamRnd-Bold.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'GothamRnd-BoldItal';
+    src: url('../fonts/GothamRnd-BoldItal.eot');
+    src: url('../fonts/GothamRnd-BoldItal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRnd-BoldItal.woff') format('woff'),
+         url('../fonts/GothamRnd-BoldItal.ttf') format('truetype'),
+         url('../fonts/GothamRnd-BoldItal.svg#GothamRnd-BoldItal') format('svg');
+	 src: url('../fonts/GothamRnd-BoldItal.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamRnd-Book';
+    src: url('../fonts/GothamRnd-Book.eot');
+    src: url('../fonts/GothamRnd-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRnd-Book.woff') format('woff'),
+         url('../fonts/GothamRnd-Book.ttf') format('truetype'),
+         url('../fonts/GothamRnd-Book.svg#GothamRnd-Book') format('svg');
+	 src: url('../fonts/GothamRnd-Book.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamRnd-BookItal';
+    src: url('../fonts/GothamRnd-BookItal.eot');
+    src: url('../fonts/GothamRnd-BookItal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRnd-BookItal.woff') format('woff'),
+         url('../fonts/GothamRnd-BookItal.ttf') format('truetype'),
+         url('../fonts/GothamRnd-BookItal.svg#GothamRnd-BookItal') format('svg');
+	 src: url('../fonts/GothamRnd-BookItal.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamRnd-Light';
+    src: url('../fonts/GothamRnd-Light.eot');
+    src: url('../fonts/GothamRnd-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRnd-Light.woff') format('woff'),
+         url('../fonts/GothamRnd-Light.ttf') format('truetype'),
+         url('../fonts/GothamRnd-Light.svg#GothamRnd-Light') format('svg');
+	 src: url('../fonts/GothamRnd-Light.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamRnd-LightItal';
+    src: url('../fonts/GothamRnd-LightItal.eot');
+    src: url('../fonts/GothamRnd-LightItal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRnd-LightItal.woff') format('woff'),
+         url('../fonts/GothamRnd-LightItal.ttf') format('truetype'),
+         url('../fonts/GothamRnd-LightItal.svg#GothamRnd-LightItal') format('svg');
+	 src: url('../fonts/GothamRnd-LightItal.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamRnd-Medium';
+    src: url('../fonts/GothamRnd-Medium.eot');
+    src: url('../fonts/GothamRnd-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRnd-Medium.woff') format('woff'),
+         url('../fonts/GothamRnd-Medium.ttf') format('truetype'),
+         url('../fonts/GothamRnd-Medium.svg#GothamRnd-Medium') format('svg');
+	 src: url('../fonts/GothamRnd-Medium.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GothamRnd-MedItal';
+    src: url('../fonts/GothamRnd-MedItal.eot');
+    src: url('../fonts/GothamRnd-MedItal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothamRnd-MedItal.woff') format('woff'),
+         url('../fonts/GothamRnd-MedItal.ttf') format('truetype'),
+         url('../fonts/GothamRnd-MedItal.svg#GothamRnd-MedItal') format('svg');
+	 src: url('../fonts/GothamRnd-MedItal.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body { 
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:  GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 20px;
+	width: 100%;
+}
+
+.menu {
+	float: left;
+	width: 45%;
+	background-color: #071647;
+	height: 35px;
+	border-bottom: 0px;
+	padding-left: 15px;
+	border-left: thin solid White;
+}
+
+.FondoMenu {
+	width: 100%;
+	background-color: #071647;
+	height: 36px;
+	border-bottom: thin solid #FFffff;
+}
+
+.idioma {
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.imageMobile {
+	width: 100%;
+	height: 316px;
+	background-image: url(../bannerImage/01.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.imageMobileServicios {
+	width: 100%;
+	height: 316px;
+	background-image: url(../bannerImage/02.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.imageMobileDirector {
+	width: 100%;
+	height: 316px;
+	background-image: url(../bannerImage/04.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.imageMobileContacto {
+	width: 100%;
+	height: 316px;
+	background-image: url(../bannerImage/03.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+#recuadroTexto {
+	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
+	font-size: 13px;
+	color: #444444;
+	width: 100%;
+}
+
+.titular {
+	float: left;
+	width: 100%;
+}
+
+.titularBullet {
+	float: left;
+	width: 10%;
+}
+
+.titularTitulo {
+	float: left;
+	width: 85%;
+	text-align: left;
+}
+
+.mobileTexto {
+	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
+	font-size: 13px;
+	color: #444444;
+	margin: 0px 10px 0px 40px;
+}
+
+a:link {
+	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
+	color: #444444;
+	TEXT-DECORATION: none;
+	border: 0px;
+}
+
+a:visited {
+	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
+	color: #444444;
+	TEXT-DECORATION: none;
+	border: 0px;
+}
+
+a:active {
+	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
+	color: #444444;
+	TEXT-DECORATION: none;
+	border: 0px;
+}
+
+a:hover {
+	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
+	color: #dc261d;
+	TEXT-DECORATION: none;
+	border: 0px;
+}
+
+.fullScreen {
+	text-align: center;
+	font-size: 11px;
+}
+
+div.idioma {
+	display: block;
+}
+
+.contenedor {
+	width: 100%;
+}
+
+.contenidoTop {
+	padding-left: 0px;
+}
+
+.contenidoTop img {
+	width: 50%;
+	height:auto;
+}
+
+.contenidoMenu {
+	width: 100%;
+	margin-left: 0px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+.contenidoMenu div {
+	width: 49%;
+	/*background-color: #071647;
+	background-image: url(../images/menu_fondolineal.png);
+	background-repeat: repeat-x;
+	background-position: top left;*/
+	border-bottom: 0.25px solid #6b6b6b;
+	text-align: center;
+	margin-left: 0px;
+	height: 41px;
+}
+
+.contenidoMenu div img {
+	margin: 0 auto;
+}
+
+.contenidoMenu div.flag {
+	display: none;
+}
+
+.main-banner {
+	position: relative;
+	margin-left: 0px;
+}
+
+.main-banner img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: auto;
+}
+
+.main-content {
+	display: none;
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	margin-left: 0px;
+}
+
+.main-content .titulo-lateral-texto,
+.main-content .linea-vertical {
+	display:none;
+}
+
+.main-content .texto-principal {
+	width: 100%;
+}
+
+.contenedor-footer {
+	display: none;
+}
+
+.contenidoPie {
+	display: none;
+}
+
+/*.main-content .texto-principal .textoInicial img {
+	width: 100%;
+}*/
+
+.main-content .texto-principal table {
+	width: 100%;
+}
+
+.main-content .texto-principal iframe {
+	margin-bottom: 30px;
+    width: 90%;
+	height: auto;
+}
+
+.main-content .texto-principal-bullet img {
+	padding-top: 75px;
+}
+
+.separacion{
+	background-image: url(../images/separacion.png);
+	background-repeat: repeat-x;
+}
+
+.subtitulo-interior {
+	height: 25px;
+}
+
+ 
