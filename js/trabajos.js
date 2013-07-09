@@ -12,16 +12,23 @@ function cargarPaginaTrabajos() {
 			var headerTrabajos = $("#recuadroTexto");
 			var contenido = $("#scroll", headerTrabajos);
 			
-			 $(xml).find('cliente').each(function(){
+			 $(xml).find('cliente').each(function(index){
 				 var nombreCliente = $('nombre', this).text();
 				 var thumbnail = $('thumbnail', this).text();
 				 
-				 var elemento = "<div>";
-				 elemento += "<a href='javascript:showLightbox();'>";
+				 var imagenes = [];
+				 var titulosImagenes = [];
+				 $(this).find("imagen").each(function() { 
+					 imagenes.push( $(this).text() ); 
+					 titulosImagenes.push(nombreCliente);
+				 });
+				 
+				 var elemento = "<div onclick='showLightbox(" + index + ")' id='imgCliente_" + index + "'>";
 				 elemento += "<img src='" + thumbnail + "' width='133' height='133' />";
-				 elemento += "</a>";
 				 elemento += "<img src='images/bulletTrabajos.png' width='12' height='12' />";
 				 elemento += nombreCliente;
+				 elemento += "<input type='hidden' name='imagenes' value='" + imagenes + "' />";
+				 elemento += "<input type='hidden' name='titulosImagenes' value='" + titulosImagenes + "' />";
 				 elemento += "</div>";
 				 
 				 contenido.append(elemento);
@@ -31,4 +38,10 @@ function cargarPaginaTrabajos() {
 		}
 	});
 	
+}
+
+function showLightbox(indice) {
+	var imagenes = $("#imgCliente_" + indice + " input[name='imagenes']").val().split(',');
+	var titulos = $("#imgCliente_" + indice + " input[name='titulosImagenes']").val().split(',');
+	$.prettyPhoto.open(imagenes,titulos,[]);
 }

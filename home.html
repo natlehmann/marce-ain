@@ -3,7 +3,7 @@
 
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /> 
-	<link rel="stylesheet" href="style/lightbox.css">
+	<link rel="stylesheet" href="style/prettyPhoto.css">
 	<link rel="stylesheet" type="text/css" media="Screen" href="style/master.css">
 	<link media="handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px)" 
 		href="style/master_mobile.css" type="text/css" rel="stylesheet" /> 
@@ -37,9 +37,21 @@
 		}
 	</script>
 	<script type="text/JavaScript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/JavaScript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/JavaScript" src="js/modernizr.custom.js"></script>
 	<script type="text/JavaScript" src="js/trabajos.js"></script>
 	
 	<script type="text/javascript">
+		$(document).ready(function() {
+			$.fn.prettyPhoto({
+				slideshow: 5000,
+				autoplay_slideshow: true,
+				show_title: true,
+				theme: 'facebook',
+				social_tools: ''
+			});
+		});
+	
 		function cargarPagina(url) {
 			$.ajax({
 				url: url,
@@ -54,21 +66,13 @@
 				}
 			});
 		}
-
-		function showLightbox() {
-			document.getElementById('over').style.display='block';
-			document.getElementById('fade').style.display='block';
-		}
-		function hideLightbox() {
-			document.getElementById('over').style.display='none';
-			document.getElementById('fade').style.display='none';
-		}
 </script>
 
 
 </head>
 
-<body onLoad="MM_preloadImages('images/menu_equipo_on.png','images/menu_servicios_on.png','images/menu_contacto_on.png','images/idioma_en.png','images/botGaleriaRetro_on.png','images/botGaleriaAvan_on.png')">
+<body id="ainoko" 
+	onLoad="MM_preloadImages('images/menu_equipo_on.png','images/menu_servicios_on.png','images/menu_contacto_on.png','images/idioma_en.png','images/botGaleriaRetro_on.png','images/botGaleriaAvan_on.png')">
 	
 <div class="idioma">
 	<a href="index_en.html" target="_self"
@@ -136,18 +140,9 @@ Nuestro taller está ubicado en el barrio de Palermo en un espacio que nos permit
 	</div>
 
 </div>
-	<div id="over" class="overbox">
-            <div class="botonesCierre"><a href="javascript:hideLightbox();" >X</a></div>
-            <div class="content">
-                <div id="contentGaleria">
-                    <div class="contentFlechas"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('retro','','images/botGaleriaRetro_on.png',1)"><img src="images/botGaleriaRetro_off.png" name="retro" width="29" height="71" border="0"></a></div>
-                    <div id="contentBorde"><img src="images/Trabajo01.jpg" width="798" height="575" /></div>
-                    <div class="contentFlechas"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('avan','','images/botGaleriaAvan_on.png',1)"><img src="images/botGaleriaAvan_off.png" name="avan" width="29" height="71" border="0"></a></div>
-                 </div>
-            </div>
-            
-            
-    </div>
+
+    
+    
 <script src="slideShow.js"></script>
 </body>
 </html>
