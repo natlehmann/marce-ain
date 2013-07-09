@@ -2,78 +2,78 @@
 <clientes>
 	<cliente>
 		<nombre>Cliente 1</nombre>
-		<thumbnail>images/tumbTrabajo01.jpg</thumbnail>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
 		<imagenes>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
 		</imagenes>
 	</cliente>
 	
 	<cliente>
 		<nombre>Cliente 2</nombre>
-		<thumbnail>images/tumbTrabajo01.jpg</thumbnail>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
 		<imagenes>
-			<imagen>images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
 		</imagenes>
 	</cliente>
 	
 	<cliente>
 		<nombre>Cliente 3</nombre>
-		<thumbnail>images/tumbTrabajo01.jpg</thumbnail>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
 		<imagenes>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
 		</imagenes>
 	</cliente>
 	
 	<cliente>
 		<nombre>Cliente 4</nombre>
-		<thumbnail>images/tumbTrabajo01.jpg</thumbnail>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
 		<imagenes>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
 		</imagenes>
 	</cliente>
 	
 	<cliente>
 		<nombre>Cliente 5</nombre>
-		<thumbnail>images/tumbTrabajo01.jpg</thumbnail>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
 		<imagenes>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
 		</imagenes>
 	</cliente>
 	
 	<cliente>
 		<nombre>Cliente 6</nombre>
-		<thumbnail>images/tumbTrabajo01.jpg</thumbnail>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
 		<imagenes>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
 		</imagenes>
 	</cliente>
 	
 	<cliente>
 		<nombre>Cliente 7</nombre>
-		<thumbnail>images/tumbTrabajo01.jpg</thumbnail>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
 		<imagenes>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
-			<imagen>images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
 		</imagenes>
 	</cliente>
 	
