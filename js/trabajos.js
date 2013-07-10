@@ -1,6 +1,15 @@
 function cargarPaginaTrabajos() {
 	
-	$("#recuadroTexto").load("trabajos.html");
+	var textoAInsertar = [];
+	textoAInsertar[0] = "<div class='main-banner'>";
+	textoAInsertar[1] = "<img src='images/bulletTitular.png' />";
+	textoAInsertar[2] = "TRABAJOS";
+	textoAInsertar[3] = "</div>";
+	textoAInsertar[4] = "<div class='main-content'>";
+	textoAInsertar[5] = "<div class='texto-principal'>";
+	textoAInsertar[6] = "<div id='scroll'>";
+	
+	var i = 7;
 	
 	$.ajax({
         type: "GET",
@@ -9,9 +18,6 @@ function cargarPaginaTrabajos() {
 		async: false,
 		success: function(xml) {
 			 
-			var headerTrabajos = $("#recuadroTexto");
-			var contenido = $("#scroll", headerTrabajos);
-			
 			 $(xml).find('cliente').each(function(index){
 				 var nombreCliente = $('nombre', this).text();
 				 var thumbnail = $('thumbnail', this).text();
@@ -23,17 +29,22 @@ function cargarPaginaTrabajos() {
 					 titulosImagenes.push(nombreCliente);
 				 });
 				 
-				 var elemento = "<div onclick='showLightbox(" + index + ")' id='imgCliente_" + index + "'>";
-				 elemento += "<img src='" + thumbnail + "' width='133' height='133' />";
-				 elemento += "<img src='images/bulletTrabajos.png' width='12' height='12' />";
-				 elemento += nombreCliente;
-				 elemento += "<input type='hidden' name='imagenes' value='" + imagenes + "' />";
-				 elemento += "<input type='hidden' name='titulosImagenes' value='" + titulosImagenes + "' />";
-				 elemento += "</div>";
-				 
-				 contenido.append(elemento);
-				 
+				 textoAInsertar[i++] = "<div onclick='showLightbox(" + index + ")' id='imgCliente_" + index + "'>";
+				 textoAInsertar[i++] = "<img src='" + thumbnail + "' width='133' height='133' />";
+				 textoAInsertar[i++] = "<img src='images/bulletTrabajos.png' width='12' height='12' />";
+				 textoAInsertar[i++] = nombreCliente;
+				 textoAInsertar[i++] = "<input type='hidden' name='imagenes' value='" + imagenes + "' />";
+				 textoAInsertar[i++] = "<input type='hidden' name='titulosImagenes' value='" + titulosImagenes + "' />";
+				 textoAInsertar[i++] = "</div>";
+	
 			 });
+			 
+			 textoAInsertar[i++] = "</div>";
+			 textoAInsertar[i++] = "</div>";
+			 textoAInsertar[i++] = "</div>";
+			 
+			 $('#recuadroTexto').html('');
+			 $('#recuadroTexto').append(textoAInsertar.join(''));
 			 
 		}
 	});
