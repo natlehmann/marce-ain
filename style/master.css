@@ -157,9 +157,6 @@ a:hover {
 	color: #444444;
 	background-color: #FFF;
 	width: 597px;
-	height: 100%;
-	float: right;
-	_height: 900px;
 }
 
 #recuadroTexto table {
@@ -298,7 +295,7 @@ div.idioma {
 	font-size: 30px;
 	font-style: italic;
 	margin-left: 10px;
-	margin-top: 25%;
+	padding-top: 25%;
 	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
 }
 
@@ -337,6 +334,32 @@ div.idioma {
 	padding-bottom: 20px;
 	padding-right: 7px;
 	width: 133px;
+}
+
+#scroll div.jspVerticalBar {
+	width: 10px;
+}
+
+#ainoko .jspPane {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;  
+}
+
+#ainoko .jspHorizontalBar {
+	display: none;
+}
+
+#ainoko .jspDrag {
+	background-color: #f90332;
+}
+
+#ainoko .jspTrack {
+	background-color: #cccccc;
+}
+
+#ainoko .jspVerticalBar {
+	background-color: #cccccc;
 }
 
 #scroll div img {

@@ -46,6 +46,8 @@ function cargarPaginaTrabajos() {
 			 $('#recuadroTexto').html('');
 			 $('#recuadroTexto').append(textoAInsertar.join(''));
 			 
+			 initializeScrollPane();
+			 
 		}
 	});
 	
@@ -55,4 +57,10 @@ function showLightbox(indice) {
 	var imagenes = $("#imgCliente_" + indice + " input[name='imagenes']").val().split(',');
 	var titulos = $("#imgCliente_" + indice + " input[name='titulosImagenes']").val().split(',');
 	$.prettyPhoto.open(imagenes,titulos,[]);
+}
+
+function initializeScrollPane() {
+	$('#scroll').jScrollPane({
+		verticalDragMaxHeight: 80
+	});
 }

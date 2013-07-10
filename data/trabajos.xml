@@ -77,4 +77,59 @@
 		</imagenes>
 	</cliente>
 	
+	<cliente>
+		<nombre>Cliente 8</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 9</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 10</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 11</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 12</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+			<imagen>data/images/Trabajo01.jpg</imagen>
+		</imagenes>
+	</cliente>
+	
 </clientes>
