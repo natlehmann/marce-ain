@@ -157,7 +157,7 @@ a:hover {
 	color: #444444;
 	background-color: #FFF;
 	width: 597px;
-	_height: 900px;
+	    margin-left: 60px;
 }
 
 #recuadroTexto table {
@@ -171,10 +171,11 @@ a:hover {
 	font-size: 13px;
 	color: #444444;
 	float: left;
-	padding-left: 100px;
+	/*padding-left: 100px;*/
 }
 
 .contenidoMenu {
+	height: 42px;
 	color: white;
 	padding-top: 60px;
 	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
@@ -323,18 +324,16 @@ div.idioma {
 }
 
 #scroll {
-	height: 510px;
+	height: 500px;
 	width: 580px;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	_width:580px;
 }
 
 #scroll div {
 	float: left;
 	padding-bottom: 20px;
 	padding-right: 7px;
-	_padding-right: 0px;
 	width: 133px;
 }
 
@@ -366,9 +365,6 @@ div.idioma {
 
 #scroll div img {
 	_border: none;
-	 margin-right: 4px;
-    margin-top: 4px;
-
 }
 
 /*--------------------------------------home--------------------------------------*/
@@ -391,4 +387,10 @@ div.idioma {
 .flagHome img {
 	_float: left;
 	_text-align: right;
+}
+
+
+.centrado {
+	width:80%;
+	margin: 0 auto;
 }
