@@ -24,9 +24,12 @@ function cargarPaginaTrabajos() {
 				 
 				 var imagenes = [];
 				 var titulosImagenes = [];
+				 var descripcionImagenes = [];
+				 
 				 $(this).find("imagen").each(function() { 
-					 imagenes.push( $(this).text() ); 
+					 imagenes.push( $('url', this).text() ); 
 					 titulosImagenes.push(nombreCliente);
+					 descripcionImagenes.push( $('descripcion', this).text() );
 				 });
 				 
 				 textoAInsertar[i++] = "<div onclick='showLightbox(" + index + ")' id='imgCliente_" + index + "'>";
@@ -35,6 +38,7 @@ function cargarPaginaTrabajos() {
 				 textoAInsertar[i++] = nombreCliente;
 				 textoAInsertar[i++] = "<input type='hidden' name='imagenes' value='" + imagenes + "' />";
 				 textoAInsertar[i++] = "<input type='hidden' name='titulosImagenes' value='" + titulosImagenes + "' />";
+				 textoAInsertar[i++] = "<input type='hidden' name='descripcionImagenes' value='" + descripcionImagenes + "' />";
 				 textoAInsertar[i++] = "</div>";
 	
 			 });
@@ -56,7 +60,9 @@ function cargarPaginaTrabajos() {
 function showLightbox(indice) {
 	var imagenes = $("#imgCliente_" + indice + " input[name='imagenes']").val().split(',');
 	var titulos = $("#imgCliente_" + indice + " input[name='titulosImagenes']").val().split(',');
-	$.prettyPhoto.open(imagenes,titulos,[]);
+	var descripciones = $("#imgCliente_" + indice + " input[name='descripcionImagenes']").val().split(',');
+	
+	$.prettyPhoto.open(imagenes,titulos,descripciones);
 }
 
 function initializeScrollPane() {
