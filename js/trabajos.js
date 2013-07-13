@@ -1,9 +1,9 @@
 function cargarPaginaTrabajos() {
 	
 	var textoAInsertar = [];
-	textoAInsertar[0] = "<div class='main-banner'>";
+	textoAInsertar[0] = "<div class='main-banner'><div class='banner-titulo'>";
 	textoAInsertar[1] = "<img src='images/bulletTitular.png' />";
-	textoAInsertar[2] = "TRABAJOS";
+	textoAInsertar[2] = "TRABAJOS</div>";
 	textoAInsertar[3] = "</div>";
 	textoAInsertar[4] = "<div class='main-content'>";
 	textoAInsertar[5] = "<div class='texto-principal'>";
@@ -51,7 +51,7 @@ function cargarPaginaTrabajos() {
 			 $('#recuadroTexto').append(textoAInsertar.join(''));
 			 
 			 if (!prepararParaMobile(0.8)) {
-				 ajustarAltoPantalla(0.65);
+				 ajustarAltoPantalla(0.7);
 			 }
 			 
 			 initializeScrollPane();

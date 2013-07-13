@@ -218,7 +218,7 @@ div.idioma {
 	background-image: url("../images/bg.jpg");
 	color: white;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 0px;
 }
 
 .main-banner img {
