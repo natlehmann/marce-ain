@@ -15,6 +15,7 @@ body {
 	width: 100%;
 	padding: 0px;
 	background-position: center;
+	z-index: -2;
 }
 
 .menu {
@@ -41,43 +42,13 @@ body {
 	text-align: right;
 }
 
-.imageMobile {
-	width: 100%;
-	height: 316px;
-	background-image: url(../bannerImage/01.jpg);
-	background-position: right;
-	background-repeat: no-repeat;
-}
-
-.imageMobileServicios {
-	width: 100%;
-	height: 316px;
-	background-image: url(../bannerImage/02.jpg);
-	background-position: right;
-	background-repeat: no-repeat;
-}
-
-.imageMobileDirector {
-	width: 100%;
-	height: 316px;
-	background-image: url(../bannerImage/04.jpg);
-	background-position: right;
-	background-repeat: no-repeat;
-}
-
-.imageMobileContacto {
-	width: 100%;
-	height: 316px;
-	background-image: url(../bannerImage/03.jpg);
-	background-position: right;
-	background-repeat: no-repeat;
-}
-
 #recuadroTexto {
 	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
 	font-size: 13px;
 	color: #444444;
 	width: 100%;
+	margin: 0px;
+	z-index: 20;
 }
 
 .titular {
@@ -170,30 +141,6 @@ div.idioma {
 	margin: 0 auto;
 }
 
-.contenidoMenu div.flag {
-	display: none;
-}
-
-.main-banner {
-	position: relative;
-	margin-left: 0px;
-}
-
-.main-banner img {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: auto;
-}
-
-.main-content {
-	display: none;
-	position: absolute;
-	top: 90px;
-	left: 0px;
-	margin-left: 0px;
-}
 
 .main-content .titulo-lateral-texto,
 .main-content .linea-vertical {
@@ -201,7 +148,11 @@ div.idioma {
 }
 
 .main-content .texto-principal {
-	width: 100%;
+	font-size: 12px;
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 90%;
+    overflow-y: auto; 
 }
 
 .contenedor-footer {
@@ -212,12 +163,13 @@ div.idioma {
 	display: none;
 }
 
-/*.main-content .texto-principal .textoInicial img {
-	width: 100%;
-}*/
+.main-content {
+	margin-left: 0px;
+}
 
 .main-content .texto-principal table {
 	width: 100%;
+	min-height: inherit;
 }
 
 .main-content .texto-principal iframe {
@@ -255,5 +207,49 @@ div.idioma {
 	padding-top: 0px;
 	text-align: center;
 }
+	
+.centrado {
+	width: 100%;
+}
 
+.main-banner {
+	margin: 0px;
+	padding: 0px;
+	background-image: url("../images/bg.jpg");
+	color: white;
+    font-size: 18px;
+    line-height: 28px;
+}
 
+.main-banner img {
+	margin-left: 3%;
+}
+
+#imagenPrincipal {
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+
+#scroll {
+	width: 100%;
+}
+
+#ainoko .pp_details {
+	font-size: 11px;
+	line-height: 14px;
+}
+
+#footerMobile {
+	background: #fff;
+	width: 100%;
+	height: 350px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+#ainoko .jspVerticalBar {
+	width: 8px;
+}

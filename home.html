@@ -63,12 +63,30 @@
 				dataType: "html"
 			}).done(function( data ) {
 				$("#recuadroTexto").html(data);
-				if (screen && (screen.width <= 480 || window.innerWidth <= 480)) {
-					$('#recuadroTexto .titulo').css('top', '5px');
-					$('.cerrar').css('top', '5px');
-					$('#header-logo-menu').hide();
-					$('.main-content').show();
+				prepararParaMobile();
+				initializeScrollPane();
+			});
+		}
+
+		function prepararParaMobile(altoPantalla) {
+			if (screen && (screen.width <= 480 || window.innerWidth <= 480)) {
+				$('#header-logo-menu').hide();
+				$('#lateralDerecha').show();
+				$('.cerrar').css('top', '0');
+				$('#footerMobile').show();
+
+				if (!altoPantalla) {
+					altoPantalla = 0.3;
 				}
+				
+				var alto = $(document).height() * altoPantalla;
+				$('.texto-principal').css('height', alto + 'px'); 
+			}
+		}
+
+		function initializeScrollPane() {
+			$('.texto-principal').jScrollPane({
+				verticalDragMaxHeight: 80
 			});
 		}
 </script>
@@ -79,16 +97,9 @@
 <body id="ainoko" 
 	onLoad="MM_preloadImages('images/idioma_en.png','images/botGaleriaRetro_on.png','images/botGaleriaAvan_on.png')">
 	
-<div class="idioma">
-	<a href="index_en.html" target="_self"
-		onMouseOver="MM_swapImage('idioma','','images/idioma_en.png',1)"
-		onMouseOut="MM_swapImgRestore()">
-		<img src="images/idioma_en.png" name="idioma" border="0" id="idioma" />
-	</a>
-</div>
 
 <div class="cerrar">
-	<a href="index.html">
+	<a href="home.html">
 		X
 	</a>
 </div>
@@ -129,16 +140,21 @@
 
 	<div id="recuadroTexto">
 		<div class="main-banner"><img src="images/bulletTitular.png" /> NOSOTROS
-			<img src="images/imgNosotros.jpg" />
+			<img src="images/imgNosotros.jpg" id="imagenPrincipal" />
 	  </div>
 		
 		<div class="main-content">
 			<div class="texto-principal">
-				Nuestra <strong>formación y experiencia en el diseño industrial</strong> nos permite pensar la realización de una obra con un enfoque proyectual y técnico que facilita la materialización para el artista. <br><br>
-
-Tenemos una <strong>experiencia de más de 10 años en el área y una gran confianza en la calidad de nuestros trabajos</strong> y en la satisfacción de nuestros clientes.<br><br> 
-
-Nuestro taller está ubicado en el barrio de Palermo en un espacio que nos permite trabajar en grandes escalas.
+				<div id="scroll">
+					Nuestra <strong>formación y experiencia en el diseño industrial</strong> 
+					nos permite pensar la realización de una obra con un enfoque proyectual y técnico que facilita la materialización para el artista. <br><br>
+	
+					Tenemos una <strong>experiencia de más de 10 años en el área y una gran confianza en 
+					la calidad de nuestros trabajos</strong> y en la satisfacción de nuestros clientes.<br><br> 
+	
+					Nuestro taller está ubicado en el barrio de Palermo en un espacio que nos permite 
+					trabajar en grandes escalas.
+				</div>
 			</div>
 
 		</div>
@@ -149,5 +165,8 @@ Nuestro taller está ubicado en el barrio de Palermo en un espacio que nos permit
     
     
 <script src="slideShow.js"></script>
+
+<div id="footerMobile" style="display:none"></div>
+
 </body>
 </html>

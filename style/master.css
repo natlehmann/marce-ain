@@ -121,6 +121,8 @@ body {
 	margin-bottom: 0;
 	margin-top: 0;
 	_overflow: hidden;
+	height: 100%;
+	min-height: 100%;
 }
 
 a:link {
@@ -175,7 +177,6 @@ a:hover {
 }
 
 .contenidoMenu {
-	height: 42px;
 	color: white;
 	padding-top: 60px;
 	font-family: GothamRnd-Medium, helvetica, verdana, arial, sans-serif;
@@ -230,45 +231,24 @@ div.idioma {
 	top: -500px;
 	right: 0px;
 	width: 100%;
-	background-color: #000000;
 	height: 35px;
 	text-align: right;
 }
 
-.cerrar a:link {
-	color: #FFFFFF;
-	float: right;
-	font-size: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	text-decoration: none;
-}
-
-.cerrar a:visited {
-	color: #FFFFFF;
-	float: right;
-	font-size: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	text-decoration: none;
-}
-
+.cerrar a,
+.cerrar a:link,
+.cerrar a:visited,
 .cerrar a:active {
 	color: #FFFFFF;
 	float: right;
 	font-size: 20px;
 	margin-right: 20px;
-	margin-top: 20px;
+	margin-top: 15px;
 	text-decoration: none;
 }
 
 .cerrar a:hover {
 	color: #dc261d;
-	float: right;
-	font-size: 20px;
-	margin-right: 20px;
-	margin-top: 20px;
-	text-decoration: none;
 }
 
 .main-content .titulo-lateral-texto {
@@ -321,13 +301,6 @@ div.idioma {
 
 .subtitulo-interior img {
 	float: left;
-}
-
-#scroll {
-	height: 500px;
-	width: 580px;
-	overflow-y: scroll;
-	overflow-x: hidden;
 }
 
 #scroll div {

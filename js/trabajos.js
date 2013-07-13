@@ -50,6 +50,8 @@ function cargarPaginaTrabajos() {
 			 $('#recuadroTexto').html('');
 			 $('#recuadroTexto').append(textoAInsertar.join(''));
 			 
+			 prepararParaMobile(0.45);
+			 
 			 initializeScrollPane();
 			 
 		}
@@ -65,8 +67,3 @@ function showLightbox(indice) {
 	$.prettyPhoto.open(imagenes,titulos,descripciones);
 }
 
-function initializeScrollPane() {
-	$('#scroll').jScrollPane({
-		verticalDragMaxHeight: 80
-	});
-}
