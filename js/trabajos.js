@@ -50,7 +50,9 @@ function cargarPaginaTrabajos() {
 			 $('#recuadroTexto').html('');
 			 $('#recuadroTexto').append(textoAInsertar.join(''));
 			 
-			 prepararParaMobile(0.45);
+			 if (!prepararParaMobile(0.8)) {
+				 ajustarAltoPantalla(0.65);
+			 }
 			 
 			 initializeScrollPane();
 			 

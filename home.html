@@ -55,6 +55,12 @@
 				social_tools: '',
 				allow_resize: true
 			});
+
+			if (screen && screen.width > 480 && window.innerWidth > 480) {
+				ajustarAltoPantalla(0.22);
+				initializeScrollPane();
+			}
+			
 		});
 	
 		function cargarPagina(url) {
@@ -62,8 +68,13 @@
 				url: url,
 				dataType: "html"
 			}).done(function( data ) {
+				
 				$("#recuadroTexto").html(data);
-				prepararParaMobile();
+				
+				if (!prepararParaMobile()) {
+					ajustarAltoPantalla(0.22);
+				}
+				
 				initializeScrollPane();
 			});
 		}
@@ -74,14 +85,22 @@
 				$('#lateralDerecha').show();
 				$('.cerrar').css('top', '0');
 				$('#footerMobile').show();
+				$('#footerDesktop').hide();
 
-				if (!altoPantalla) {
-					altoPantalla = 0.3;
-				}
-				
-				var alto = $(document).height() * altoPantalla;
-				$('.texto-principal').css('height', alto + 'px'); 
+				ajustarAltoPantalla(altoPantalla); 
+				return true;
 			}
+
+			return false;
+		}
+
+		function ajustarAltoPantalla(altoPantalla) {
+			if (!altoPantalla) {
+				altoPantalla = 0.45;
+			}
+		
+			var alto = $(window).height() * altoPantalla;
+			$('.texto-principal').css('height', alto + 'px');
 		}
 
 		function initializeScrollPane() {
@@ -159,6 +178,8 @@
 
 		</div>
 	</div>
+	
+	<div id="footerDesktop"></div>
 
 </div>
 </div>

@@ -284,4 +284,127 @@
 		</imagenes>
 	</cliente>
 	
+	<cliente>
+		<nombre>Cliente 1</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 2</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 3</descripcion>
+			</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 2</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 3</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 2</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 3</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 2</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 3</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 2</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 3</descripcion>
+			</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 4</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 2</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 3</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 2</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 3</descripcion>
+			</imagen>
+		</imagenes>
+	</cliente>
+	
+	<cliente>
+		<nombre>Cliente 5</nombre>
+		<thumbnail>data/images/tumbTrabajo01.jpg</thumbnail>
+		<imagenes>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 1</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 2</descripcion>
+			</imagen>
+			<imagen>
+				<url>data/images/Trabajo01.jpg</url>
+				<descripcion>Descripción trabajo 3</descripcion>
+			</imagen>
+		</imagenes>
+	</cliente>
+	
 </clientes>
