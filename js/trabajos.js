@@ -34,7 +34,7 @@ function cargarPaginaTrabajos() {
 				 
 				 textoAInsertar[i++] = "<div onclick='showLightbox(" + index + ")' id='imgCliente_" + index + "'>";
 				 textoAInsertar[i++] = "<img src='" + thumbnail + "' width='133' height='133' />";
-				 textoAInsertar[i++] = "<img src='images/bulletTrabajos.png' width='12' height='12' />";
+				 textoAInsertar[i++] = "<img class='bullet' src='images/bulletTrabajos.png' width='12' height='12' />";
 				 textoAInsertar[i++] = nombreCliente;
 				 textoAInsertar[i++] = "<input type='hidden' name='imagenes' value='" + imagenes + "' />";
 				 textoAInsertar[i++] = "<input type='hidden' name='titulosImagenes' value='" + titulosImagenes + "' />";

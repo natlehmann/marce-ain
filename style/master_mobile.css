@@ -249,3 +249,28 @@ div.idioma {
 	left: 0px;
 	z-index: -1;
 }
+
+.home {
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 20%;
+    text-align: center;
+    width: 80%;
+}
+
+@media screen and (orientation:portrait) {
+  	
+	#scroll div {
+		width: 120px;
+	}
+	
+	#scroll div img {
+		width: 120px;
+		height: auto;
+	}
+	
+	#scroll div img.bullet {
+		width: 12px;
+		height: 12px;
+	}
+}
