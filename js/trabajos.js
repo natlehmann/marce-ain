@@ -1,9 +1,9 @@
-function cargarPaginaTrabajos() {
+function cargarPaginaTrabajos(tituloPagina, url) {
 	
 	var textoAInsertar = [];
 	textoAInsertar[0] = "<div class='main-banner'><div class='banner-titulo'>";
 	textoAInsertar[1] = "<img src='images/bulletTitular.png' />";
-	textoAInsertar[2] = "TRABAJOS</div>";
+	textoAInsertar[2] = tituloPagina + "</div>";
 	textoAInsertar[3] = "</div>";
 	textoAInsertar[4] = "<div class='main-content'>";
 	textoAInsertar[5] = "<div class='texto-principal'>";
@@ -13,7 +13,7 @@ function cargarPaginaTrabajos() {
 	
 	$.ajax({
         type: "GET",
-		url: "data/trabajos.xml",
+		url: url,
 		dataType: "xml",
 		async: false,
 		success: function(xml) {
