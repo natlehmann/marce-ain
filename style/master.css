@@ -123,7 +123,6 @@ body {
 	min-height: 100%;
 	z-index: -2;
 	_overflow-y: auto; 
-	display: table;
 }
 
 a:link {
@@ -366,9 +365,8 @@ div.idioma {
 
 
 .centrado {
-	width:80%;
+	width: 812px;
 	margin: 0 auto;
-	display: table-cell;
 }
 
 #lateralDerecha {
